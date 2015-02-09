@@ -35,9 +35,9 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
-  
+
   # Configure mongoid-rspec
-  include Mongoid::Matchers, type: :model
+  config.include Mongoid::Matchers, type: :model
 
   # Configure DatabaseCleaner
   config.before(:suite) do
