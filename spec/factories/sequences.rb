@@ -11,4 +11,8 @@ FactoryGirl.define do
     dni = "%08d" % n
     dni + "TRWAGMYFPDXBNJZSQVHLCKE"[dni.to_i % 23].chr
   end
+
+  sequence :title do |n|
+    "Tarea #{n}"
+  end
 end
