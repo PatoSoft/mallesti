@@ -6,7 +6,7 @@ class Project
   field :description, type: String
 
   belongs_to :customer
-  has_many :task
+  has_many :tasks
 
   validates :name, presence: true, uniqueness: {case_sensitive: false}
   validates :description, presence: true
