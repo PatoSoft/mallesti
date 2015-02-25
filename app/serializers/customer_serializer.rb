@@ -1,12 +1,3 @@
 class CustomerSerializer < ActiveModel::Serializer
-  attributes :id
-  attributes :name
-  attributes :address
-  attributes :town
-  attributes :city
-  attributes :zip_code
-  attributes :country
-  attributes :phone
-  attributes :cif
-  attributes :email
+  attributes :id, :name, :address, :town, :city, :zip_code, :country, :phone, :cif, :email
 end
